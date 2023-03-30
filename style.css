@@ -1,0 +1,71 @@
+
+:root {
+    --main-bg-color: rgba(153, 218, 255, 0.6);
+  }
+body{  
+
+    position: relative;
+    height: 2775px;
+    width: 1280px;
+    border-radius: 0px;
+    background: rgba(184, 204, 239, 0.07);}
+
+.logo{
+    position: absolute;
+    width: 48px;
+    height: 45px;
+    left: 197px;
+    top: 33px;    
+}
+
+.sub_logo{
+    position: absolute;
+    width: 138px;
+    height: 15px;
+    left: 270px;
+    top: 42px;
+
+}
+.main_menu {
+    position: absolute;
+    left: 680px;
+    top: 42px;
+    padding: 0px;
+}
+.main_menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+.main_menu li{
+    float: left;
+}
+.main_menu a{
+    display: block;
+    text-align: center;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    
+}
+.main_menu a:hover, a:active{
+    background-color: var(--main-bg-color);
+}
+.right_menu{
+    position: absolute;
+    left: 985px;
+    top: 33px;
+    
+}
+.basket_button{
+    background-color: white;
+    border-radius: 8px;
+}
+
+.login_button{
+    padding-top: -10px;
+    border-radius: 8px;
+    background-color: var(--main-bg-color);
+}
