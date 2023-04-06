@@ -9,21 +9,20 @@
         <meta name=" keywords" content = "Жүр үр, Аз жаргалаа түгээе, Аз жаргалаа хуваалцъя, аз жаргал, жүр, үр, жүр үр, Jur ur, jur ur, share happiness, jur ur cake, bread">
         <meta name="description" content="Жүр үртэй хамт аз жаргалыг хуваалцъя">
         <title>Жүр үр</title>
+       <!--style css-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <body>
-        <div class = "start">
+        <!--Icons-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+        <body>
             <!--Header-->
-            <header class="jur_header">
+            <header>
                 <div class="container">
                     <img class="logo" src="logo.svg" alt="Жүр үр лого" width="30" height="30">
                     <img class="sub_logo" src="share-happiness.svg" alt="Аз жаргалаа хуваалцъя" width="50" height="30">
                     <div class="right_menu">
-                        <button type="button" class="basket_button">
-                            <span class="material-symbols-outlined">
-                                shopping_cart
-                                </span>
-                        </button>
+                        <a href="#" class="basket"><i class='bx bx-cart'></i><span class="counter">1</span></a>
                         <a class="login" href="login.html">
                             <button type="button" class="login_button">
                                 <span>Нэвтрэх</span>
@@ -33,15 +32,9 @@
                     <div class="menu_bar">
                         <nav class="main_menu">
                             <ul>
-                                <li>
-                                    <a href="index.html" aria-label="Read more about Seminole's new baby mayor"> Нүүр хуудас</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" aria-label="Read more about Seminole's new baby mayor"> Бидний тухай</a>
-                                </li>
-                                <li>
-                                    <a href="products.html" aria-label="Read more about Seminole's new baby mayor"> Бүтээгдэхүүн</a>
-                                </li>
+                                <li><a href="index.html" class="active">Нүүр</a></li>
+                                <li><a href="products.html">Бүтээгдэхүүн</a></li>
+                                <li><a href="about.html">Бидний тухай</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -113,7 +106,6 @@
 
                 </div>
             </footer>
-        </div>
         <script src="script.js"></script>
     </body>
             </div>

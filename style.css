@@ -1,6 +1,8 @@
 
 :root {
-    --main-bg-color: rgba(153, 218, 255, 0.6);
+    --main-bg-color: rgba(113, 154, 222, 1);
+    --font-size: 12px;
+
   }
 body{  
 
@@ -8,29 +10,28 @@ body{
     height: 2775px;
     width: 1280px;
     border-radius: 0px;
-    background: rgba(184, 204, 239, 0.07);}
-
+    }
 .logo{
     position: absolute;
-    width: 48px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     left: 197px;
     top: 33px;    
 }
-
 .sub_logo{
     position: absolute;
     width: 138px;
-    height: 15px;
-    left: 270px;
+    height: 20px;
     top: 42px;
+    left:247px;
 
 }
 .main_menu {
     position: absolute;
-    left: 680px;
-    top: 42px;
+    left: 600px;
+    top: 34px;
     padding: 0px;
+    width: 400px;
 }
 .main_menu ul{
     list-style-type: none;
@@ -40,32 +41,70 @@ body{
 }
 .main_menu li{
     float: left;
+    width: 100px;
+    padding-left: 10px;
 }
 .main_menu a{
-    display: block;
-    text-align: center;
-    padding-left: 10px;
-    text-decoration: none;
-    font-size: 12px;
-    color: black;
     
+    display: block;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: var(--font-size);
+    color: black;
+    width: 80px;
+    text-align: center;
 }
-.main_menu a:hover, a:active{
-    background-color: var(--main-bg-color);
+.main_menu a:hover, .main_menu .active{
+    background: var(--main-bg-color);
+    border-radius: 5rem;
+    color: white ;
+    transition: background 0.5s;
+    width: 80px;
 }
+
 .right_menu{
     position: absolute;
     left: 985px;
-    top: 33px;
-    
+    top: 30px;    
 }
-.basket_button{
-    background-color: white;
-    border-radius: 8px;
+.bx {
+    font-size: 1.5rem;
+    color: black;
+}
+.counter{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: var(--font-size);
+    background: var(--main-bg-color);
+    color: #fff;
+    border-radius: 50%;
+    bottom: -2.5px;
+    left: 15px;
 }
 
 .login_button{
-    padding-top: -10px;
-    border-radius: 8px;
+    border-radius: 5rem;
     background-color: var(--main-bg-color);
+    font-size:var(--font-size) ;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    transition-duration: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+}
+.login{
+    padding: 10px;
+    font-size:var(--font-size) ;
+    
+}
+.login_button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid var(--main-bg-color);
+
 }
