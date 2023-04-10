@@ -1,0 +1,168 @@
+:root {
+    --main-bg-color: rgba(113, 154, 222, 1);
+    --footer-bg-color: rgb(147, 183, 241);
+    --button-color: rgba(255,80, 0, 1);
+    --font-size: 0.7rem;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem ;
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+}
+body{
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+    box-shadow: 0 5px 8px rgb(113, 154, 222);
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+.container{
+
+    display: flex;
+    column-gap:5rem;
+    padding: 2% 10%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    column-gap: 2.0rem;
+}
+.logo{
+    width:50px;
+    height: 50px;
+}
+.sub_logo{
+    width: 130px;
+    height: 40px;
+}
+
+.main_menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.main_menu li {
+    width: 100px;
+    text-align: center;
+    
+}
+.main_menu a{
+    font-size: var(--font-size);
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    color: black;
+}
+.main_menu a:hover, .main_menu .active{
+    background: var(--main-bg-color);
+    border-radius: 5rem;
+    color: white ;
+    transition: background 0.5s;
+}
+.right_menu{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;  
+    cursor: pointer;
+}
+.bx {
+    font-size: 1.5rem;
+    color: black;
+}
+.counter{
+    position: absolute;
+    margin-top: 0.6rem;
+    margin-left: -0.4rem;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: var(--font-size);
+    background: var(--button-color);
+    color: #fff;
+    border-radius: 50%;
+}
+.login_button{
+    border-radius: 5rem;
+    background-color: var(--main-bg-color);
+    font-size:var(--font-size) ;
+    border: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    transition-duration: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+}
+.login{
+    padding: 10px;
+    font-size:var(--font-size) ;   
+}
+.login_button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid var(--main-bg-color);
+
+}
+footer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+    background-color: var(--footer-bg-color);
+    margin-top: 100%;
+}
+.row{
+    height: 15rem;
+    display: flex;
+       column-gap:5rem;
+    padding: 5% 20%;
+    margin: 0 auto;
+}
+.column{
+    font-size: var(--font-size);
+    width: 50%;
+}
+.column i{
+    margin: 0.3rem 0.2rem;
+}
+.serve{
+    position: absolute;
+    margin-top: 0.6rem;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+.call{
+    position: absolute;
+    margin-top: 0.6rem;
+}
+.column img{
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+} 
