@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      
+      "name": "Бялуу",
+      "code": "VS5",
+      "img": "https://justamumnz.com/wp-content/uploads/2018/01/GLAD-BTS-2-200x200.jpg",
+      "cost": "6.99",
+      "description": "jdhjs",
+      "porch":"hdjjfjhfgjsd"
+  },
+  {
+      "name": "Бялуу",
+      "code": "VS5",
+      "img": "https://justamumnz.com/wp-content/uploads/2018/01/GLAD-BTS-2-200x200.jpg",
+      "cost": "6.99"
+  },
+  {
+     "name": "Бялуу",
+     "code": "VS5",
+     "img": "https://justamumnz.com/wp-content/uploads/2018/01/GLAD-BTS-2-200x200.jpg",
+     "cost": "6.99"
+  }]
+  }
+// productaa json class ashiglaj hiih
+//    buteegdehuunii category modulaar hiih 
+//   footer, slide , sags, nevtreh componentr hiih 
