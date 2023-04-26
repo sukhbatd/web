@@ -1,0 +1,44 @@
+
+[
+
+    {
+      "id":"1",
+      "name": "Бялуу",
+      "code": "VS5",
+      "img": "../image/logo.jpg",
+      "cost": "6.99",
+      "description": "jdhjs",
+      "porch":"hdjjfjhfgjsd"
+  },
+  {
+    "id":"2",
+    "name": "Бялуу",
+    "code": "VS5",
+    "img": "../image/logo.jpg",
+    "cost": "6.99",
+    "description": "jdhjs",
+    "porch":"hdjjfjhfgjsd"
+  },
+  {
+    "id":"3",
+    "name": "Бялуу",
+    "code": "VS5",
+    "img": "../image/logo.jpg",
+    "cost": "6.99",
+    "description": "jdhjs",
+    "porch":"hdjjfjhfgjsd"
+  },
+  {
+    "id":"4",
+    "name": "Бялуу",
+    "code": "VS5",
+    "img": "../image/logo.jpg",
+    "cost": "6.99",
+    "description": "jdhjs",
+    "porch":"hdjjfjhfgjsd"
+  }
+]
+  
+// productaa json class ashiglaj hiih
+//    buteegdehuunii category modulaar hiih 
+//   footer, slide , sags, nevtreh componentr hiih 
