@@ -29,7 +29,7 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 1.5rem;
-    box-shadow: 0 5px 8px rgb(113, 154, 222);
+    box-shadow: 0 5px 8px var(--footer-bg-color);
     transition: 0.5s;
     z-index: 1;
 
