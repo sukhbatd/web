@@ -15,6 +15,79 @@
         <script  src="./javascript/product.json" ></script>
         <!--Icons-->
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <style>
+            .main{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+                gap: 1.5rem;
+                
+                z-index: 1;
+
+            }
+            #products{
+                display: flex; 
+                justify-content: space-around;  
+                flex-wrap: wrap;
+                margin: 20px auto auto auto;
+    
+            }
+            .product {
+                width: 21%;
+                padding: 1.5em;
+                margin-bottom: 2em;
+                box-shadow: 0 5px 8px rgb(147, 183, 241);
+                transition: 0.5s;
+                border-radius: 10%;
+                /* background-color: rgb(147, 183, 241); */
+                align-items: center;
+            }
+            .back{
+                
+                width: 120%;
+                background-color:white;
+                border-radius: 10%;
+                margin-top: -10%;
+                margin-left: -10%;
+            }
+            .product img {
+                width: 100%;
+                padding-top: 25%;
+            } 
+            .product .name {
+                padding-top: 10%;
+                margin-left: -12%;
+            }
+            .product .cost {
+                margin-left: 90%;
+            } 
+            .mySlides img{
+                height: 15rem;
+            }
+            .slideshow {
+                width: 60%;
+                position: relative;
+                margin: 20px auto auto auto;
+            }
+            .active {
+                background-color: #717171;
+            }
+            .fade {
+                animation-name: fade ;
+                animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            @media only screen and (max-width: 300px) {
+                
+            }
+
+        </style>
     </head>
         <body>
             <!--Header-->
@@ -43,106 +116,52 @@
                     </div>
                 </div>    
             </header>
-            <div >
-                <ul id="productList"></ul>
-
-            </div>
-            <!-- <img src="" id="image" alt=""> -->
-        <!-- <script>
-            let text =  '{ "employees" : [' +
-                        '{ "firstName":"../image/gplay.svg" , "lastName":"Doe" },' +
-                        '{ "firstName":"Anna" , "lastName":"Smith" },' +
-                        '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
-            const obj = JSON.parse(text);
-            var img = document.createElement('img');  
-            var txt = obj.employees[0].firstName ;
-            img.src = txt;
-            document.getElementById("image").appendChild(img) ;
-            var ttt = document.getElementById("image");
-            ttt.style = "width: 100px";
-            // document.getElementById("image").src = txt;
-        </script> -->
-            <!--
-            Main section  
+<!--      Main section   -->
             <main class="home">
-               Soligdoh zurag
-              <div class="slide_image">
-                    <div class="first">
-                        <a href="#" aria-label="Read more about Seminole's new baby mayor">
-                            <div class= image1>
-                                <img src="logo.jpg" alt="Jur ur" width="30" height="30">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="second">
-                        <a href="#" aria-label="Read more about Seminole's new baby mayor">
-                            <div class= image2>
-                                <img src="logo.jpg" alt="Jur ur" width="30" height="30">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="third">
-                        <a href="#" aria-label="Read more about Seminole's new baby mayor">
-                            <div class= image3>
-                                <img src="logo.jpg" alt="Jur ur" width="30" height="30">
-                            </div>
-                        </a>
-                    </div> 
-                    Zuun, baruun tallin tovch
-                    <div class="left_button">
-                        <button class="left" title="left"></button>
-                    </div>
-                    <div class="right_button">
-                        <button class="right" title="right"></button>
-                    </div>
-                </div>  
-            </main> -->
-            <script type="module" src="./javascript/script.js" >
-            
-            </script>
-            <!-- <script>
-                let pro = `
-[
 
-    {
-      "id":"1",
-      "name": "Бялуу",
-      "code": "VS5",
-      "img": "../image/logo.jpg",
-      "cost": "6.99",
-      "description": "jdhjs",
-      "porch":"hdjjfjhfgjsd"
-  },
-  {
-    "id":"2",
-    "name": "Бялуу",
-    "code": "VS5",
-    "img": "../image/logo.jpg",
-    "cost": "6.99",
-    "description": "jdhjs",
-    "porch":"hdjjfjhfgjsd"
-  },
-  {
-    "id":"3",
-    "name": "Бялуу",
-    "code": "VS5",
-    "img": "../image/logo.jpg",
-    "cost": "6.99",
-    "description": "jdhjs",
-    "porch":"hdjjfjhfgjsd"
-  },
-  {
-    "id":"4",
-    "name": "Бялуу",
-    "code": "VS5",
-    "img": "../image/logo.jpg",
-    "cost": "6.99",
-    "description": "jdhjs",
-    "porch":"hdjjfjhfgjsd"
-  }
-]`
-console.log(JSON.parse(pro));
-            </script> -->
+               <!-- Soligdoh zurag-->
+               <article class="slideshow">
+
+                    <div class="mySlides fade">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5bdcdf595b409bb8683023e7/1654224125275-OUKCEBRNQGGR2ZDZO6M6/DSC_9904.jpg?format=2500w">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5bdcdf595b409bb8683023e7/1654225001249-5YMT2O1YXO30KFO273M0/_CWP0235.jpg?format=2500w" >
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5bdcdf595b409bb8683023e7/1654224488370-WCTHH2NW5QG8MEBHMG9V/HGC_4430.jpg?format=2500w" >
+                    </div>
+                
+                </aricle>
+               <section id = "products"> 
+                
+               
+
+               <section> 
+            </main>
+            <script>
+            
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }    
+                    slides[slideIndex-1].style.display = "block";  
+                    setTimeout(showSlides, 5000); // Change image every 2 seconds
+                }
+                </script>
+            <script type="module" src="./javascript/script.js" ></script>
+            
             <footer>
                 <div class="row">
                     <div class="column">
