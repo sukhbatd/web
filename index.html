@@ -194,190 +194,176 @@ console.log(JSON.parse(pro));
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <script  src="./javascript/product.json" ></script>
         <!--Icons-->
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-        <style>
-            .main{
-                width: 100%;
-                margin-left: auto;
-                margin-right: auto;
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-                gap: 1.5rem;
-                
-                z-index: 1;
-
-            }
-            #products{
-                display: flex; 
-                justify-content: space-around;  
-                flex-wrap: wrap;
-                margin: 20px auto auto auto;
-    
-            }
-            .product {
-                width: 21%;
-                padding: 1.5em;
-                margin-bottom: 2em;
-                box-shadow: 0 5px 8px rgb(147, 183, 241);
-                transition: 0.5s;
-                border-radius: 10%;
-                /* background-color: rgb(147, 183, 241); */
-                align-items: center;
-            }
-            .back{
-                
-                width: 120%;
-                background-color:white;
-                border-radius: 10%;
-                margin-top: -10%;
-                margin-left: -10%;
-            }
-            .product img {
-                width: 100%;
-                padding-top: 25%;
-            } 
-            .product .name {
-                padding-top: 10%;
-                margin-left: -12%;
-            }
-            .product .cost {
-                margin-left: 90%;
-            } 
-            .mySlides img{
-                height: 15rem;
-            }
-            .slideshow {
-                width: 60%;
-                position: relative;
-                margin: 20px auto auto auto;
-            }
-            .active {
-                background-color: #717171;
-            }
-            .fade {
-                animation-name: fade ;
-                animation-duration: 1.5s;
-            }
-
-            @keyframes fade {
-                from {opacity: .4} 
-                to {opacity: 1}
-            }
-            @media only screen and (max-width: 300px) {
-                
-            }
-
-        </style>
+        <link rel="stylesheet" href="./style/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+ 
     </head>
         <body>
             <!--Header-->
-             <header>
-                <div class="container">
-                    <div class="logos">
-                        <img class="logo" src="./image/logo.svg" alt="Жүр үр лого">
-                        <img class="sub_logo" src="./image/share-happiness.svg" alt="Аз жаргалаа хуваалцъя" >
-                    </div>
-                    
-                        <nav >
-                            <ul class="main_menu">
-                                <li><a href="index.html" class="active">Нүүр</a></li>
-                                <li><a href="products.html">Бүтээгдэхүүн</a></li>
-                                <li><a href="about.html">Бидний тухай</a></li>
-                            </ul>
-                        </nav>
-            
-                    <div class="right_menu">
-                        <a href="#" class="basket"><i class='bx bx-cart'></i><span class="counter">1</span></a>
-                        <a class="login" href="login.html">
-                            <button type="button" class="login_button">
-                                <span>Нэвтрэх</span>
-                            </button>
-                        </a> 
-                    </div>
-                </div>    
+            <header>
+                <a href="" class="logo"><i class='bx bx-basket'></i>The Cake House</a>
+                <article class="menu-icon" id="menu-icon"><i class="fa-solid fa-bars"></i></article>
+                <ul class="navbar">
+                    <li><a href="#home" class="home-active">Нүүр хуудас</a></li>
+                    <li><a href="#categories">Бидний тухай</a></li>
+                    <li><a href="#products">Бүтээгдэхүүн</a></li>
+                    <li><a href="#about">Холбоо барих</a></li>
+                    <li><a href="#customers">Түгээмэл асуултууд</a></li>
+                </ul>
+                <article class="profile">
+                    <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                    <a href="#sign"><i class="fa-solid fa-user" style="color: #fff; "></i></a>
+                </article>
             </header>
-<!--      Main section   -->
-            <main class="home">
-
-               <!-- Soligdoh zurag-->
-               <article class="slideshow">
-
-                    <div class="mySlides fade">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5bdcdf595b409bb8683023e7/1654224125275-OUKCEBRNQGGR2ZDZO6M6/DSC_9904.jpg?format=2500w">
+            <main>
+                <section class="home swiper" id="home">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide container">
+                            <div class="home-text">
+                                <h1>Hero title example</h1>
+                                <span>Sub hero title example</span>
+                            </div>
+                            <img src="./image/background images/IMG_5730.JPG" alt="cake1">
+                        </article>
+                        <!--Slide 2-->
+                        <article class="swiper-slide container">
+                            <div class="home-text">
+                                <h1>Hero title example</h1>
+                                <span>Sub hero title example</span>
+                            </div>
+                            <img src="./image/background images/IMG_5727.JPG" alt="cake2">
+                        </article>
+                        <!--Slide 3-->
+                        <article class="swiper-slide container">
+                            <div class="home-text">
+                                <h1>Hero title example</h1>
+                                <span>Sub hero title example</span>
+                            </div>s
+                            <img src="./image/background images/IMG_5729.JPG" alt="cake3">
+                        </article>
+                        
+                      
                     </div>
+                      <article class="swiper-button-next" style="color: white"></article>
+                      <article class="swiper-button-prev" style="color: white"></article>
                     
-                    <div class="mySlides fade">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5bdcdf595b409bb8683023e7/1654225001249-5YMT2O1YXO30KFO273M0/_CWP0235.jpg?format=2500w" >
-                    </div>
-                    
-                    <div class="mySlides fade">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5bdcdf595b409bb8683023e7/1654224488370-WCTHH2NW5QG8MEBHMG9V/HGC_4430.jpg?format=2500w" >
-                    </div>
-                
-                </aricle>
-               <section id = "products"> 
-                
-               
-
-               <section> 
-            </main>
-            <script>
             
-                let slideIndex = 0;
-                showSlides();
+                </section> 
+                <!--About section-->
+                <section class="about" id="about">
+                    <img src="./image/background images/IMG_5719.JPG" alt="aboutcake1" height="350px">
+                    <div class="about-text">
+                        <h1>Бидний тухай</h1>
+                        <span>Бидний амжилт</span>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        </p>
+                        <a href="about.html" class="btn">Илүү унших</a>
+                    </div>
+                </section>
+                <!--sign up section-->
+                <section class="sign" id="sign">
+                    <div class="container">
+                        <article class="heading">
+                            <h1>Бүртгүүлэх</h1>
+                            <span>И-мэйлээр илгээгдсэн линкээр орж бүртгэлээ </br> баталгаажуулна уу.</span>
+                        </article>
+                        <input type="email" placeholder="Enter your mail">
+                        <button class="btn1">Линк авах</button>
+                    </div>
+                    
+                </section>
+                <!--Product section-->
+                <section class="product" id="product">
+                    <div class="heading">
+                        <h1>Эрэлттэй бүтээгдэхүүнүүд</h1>
+                        <span>Тайлбар</span>
+                    </div>
+                    <!--Container content-->
+                    <div class="product-container">
+                        <!--Box1-->
+                        <article class="box box1">
+                            <img src="./image/background images/IMG_5728.JPG" alt="cake1">
 
-                function showSlides() {
-                    let i;
-                    let slides = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
-                    }
-                    slideIndex++;
-                    if (slideIndex > slides.length) {
-                        slideIndex = 1
-                    }    
-                    slides[slideIndex-1].style.display = "block";  
-                    setTimeout(showSlides, 5000); // Change image every 2 seconds
-                }
-                </script>
-            <script type="module" src="./javascript/script.js" ></script>
+                            
+                            
+                        </article>
+                        <!--Box2-->
+                        <article class="box box2">
+                            <img src="./image/background images/IMG_5725.JPG" alt="cake1">
+    
+                            
+                            
+                        </article>
+                        <!--Box3-->
+                        <article class="box box3 ">
+                            <img src="./image/background images/IMG_5724.JPG" alt="cake1">
+                        </article>
+                        <!--Box4-->
+                        <article class="box box4">
+                            <img src="./image/background images/IMG_5726.JPG" alt="cake1">
+                            
+                            
+                        </article>
+                        <!--Box5-->
+                        <article class="box box5">
+                            <img src="./image/background images/IMG_5720.JPG" alt="cake1">
+
+                            
+                            
+                        </article>
+
+                    </div>
+                </section>
+            </main>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script  src="./javascript/script.js" ></script>
             
             <footer>
-                <div class="row">
-                    <div class="column">
-                        
-                       <i class='bx bxs-store'></i>
-                       <span class="serve">Үйлчилгээний нөхцөл</span>
-                        <p>Загвар болон өдөр өөрчлөх боломжгүй байгаа тул та сайн нягталж шалгаад захиалаарай. Бялуу болон тартны хүргэлтийн үйлчилгээг "Улаанбаатар такси" компани хариуцаж байгаа та хүргэлттэй холбоотой асуух лавлах зүйл холбоо барина уу.</p>
-                    </div>
-                    <div class="column">
-                        
-                        <h3>Холбоо барих</h3> 
-                        <i class='bx bxs-phone-call'></i><span class="call">976-9999-9999</span>
-                        <address>
-                            
-                            <a href=""> <i class='bx bxl-facebook-circle'></i></a>
-                            <a href=""><i class='bx bxl-gmail'></i></a>
-                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                            <a href=""><i class='bx bxs-map'></i></a>
-                            
-                        </address> 
-                         <a href="mobile.html"><img src="./image/gplay.svg" alt="Google Play store link"></a>
-                         <a href=""><img src="./image/appstore.svg" alt=""></a>
-                    </div>
-                    
+                <div class="container">
+                    <article  class="footer-box">
 
+                        <h2>Санал хүсэлт</h2>
+                        <span>Send ud message</span>
+            
+                        <input type="text" name="" placeholder="Нэр" >
+                        <input type="email" name="" placeholder="И-мэйл" >
+                        <input type="text" name="" placeholder="Сэтгэгдэл" style="padding-bottom: 5rem; max-width: 18rem;" >
+                        <button class="btn1">Илгээх</button>
+                    </article >
+                    <article class="footer-box">
+                        <h2>The Cake House</h2>
+                        <span>All our pages</span>
+                        <ul class="navbar1">
+                            <li><a href="#home" >Нүүр хуудас</a></li>
+                            <li><a href="#categories">Бидний тухай</a></li>
+                            <li><a href="#products">Бүтээгдэхүүн</a></li>
+                            <li><a href="#about">Холбоо барих</a></li>
+                            <li><a href="#customers">Түгээмэл асуултууд</a></li>
+                            <li><a href="">Холбоо барих</a></li>
+                        </ul>
+                    </article >
+                    <article class="footer-box">
+                        <h2>Холбоо барих</h2>
+                        <span>Contacts</span>
+                        <img src="" alt="">
+                        <article class="contact">
+                            <i class="fa-solid fa-phone"></i><span >+976 8810-0239</span>
+                        </article>
+                        <article class="contact">
+                            <i class="fa-solid fa-envelope"></i><span >thecakehouse@gmail.com</span>
+                        </article>
+                        
+                       
+                        
+                    </article >
                 </div>
-            </footer> -->
-
-    <footer id="footer"></footer>
-    <script type="module">
-      import { Footer } from "./../footer.js";
-
-      const footerElement = document.getElementById("footer");
-      const footer = new Footer(footerElement);
-
-      footer.render();
-    </script>
-  </body>
+                
+                <section class="copyright">
+                    <p>Copyright 2023. All Rights Reserved  </p>
+                </section>
+            </footer>
+            
+      
+    </body>
 </html>
