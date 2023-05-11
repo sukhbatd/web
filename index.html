@@ -1,162 +1,160 @@
 <!DOCTYPE html>
 <style>
-    .swiper-wrapper .container{
-    position: relative;
-    width: 100%;
-    min-height: 30rem;
-    max-height: 35rem;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
+        .swiper-wrapper .container{
+        position:relative;
+        width: 100%;
+        min-height: 30rem;
+        max-height: 35rem;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
 
-.home-text{
-    position: absolute;
-    padding: 20%;
-    color: white;
+    .home-text{
+        position: absolute;
+        padding: 20%;
+        color: white;
 
-}
-.home-text span{
-    font-weight: 400;
-    text-transform: uppercase;
-}
-.home-text h1{
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    }
+    .home-text span{
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
 
-}
+    }
+    .about{
+        max-width: 50rem;
+        margin:  3rem auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+        align-items: center;
+        gap: 1rem;
 
-.about{
-    min-width: 30rem;
-    max-width: 50rem;
-    margin:  3rem auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
-    align-items: center;
-    gap: 1rem;
+    }
+    .about-text h1{
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+    }
+    .about-text {
+        margin: 0.5rem 0 1rem;
+        max-width: 35rem;
+    }
+    .about p{
+        padding: 2rem 0;
+    }
+    .about img{
+        width: 20rem;
+        height: 20rem;
+    }
 
-}
-.about-text h1{
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-bottom: 0.5rem;
-}
-.about-text {
-    margin: 0.5rem 0 1rem;
-    max-width: 35rem;
-}
-.about p{
-    padding: 2rem 0;
-}
-.about img{
-    width: 20rem;
-    height: 20rem;
-}
+    .btn{
+        padding: 0.8rem 1rem;
+        background: var(--main-bg-color);
+        color: white;
+        font-weight: 400;
+        border-radius: 5rem;
+        max-width: 10rem;
+    }
+    .btn:hover{
+        background: var(--sub-brown);
+        transition: 0.2s ease;
 
-.btn{
-    padding: 0.8rem 1rem;
-    background: var(--main-bg-color);
-    color: white;
-    font-weight: 400;
-    border-radius: 5rem;
-    max-width: 10rem;
-}
-.btn:hover{
-    background: var(--sub-brown);
-    transition: 0.2s ease;
+    }
+    .sign .heading h1{
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 0.8rem 0;
 
-}
-.sign .heading h1{
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 0.8rem 0;
+    }
+    .sign .heading span{
+        color: var(--green-color);
+    }
+    .sign{
+        background-color: var(--main-bg-color);
+        
+    }
+    .sign .container{
+        max-width: 50rem;
+        margin:  3rem auto;
+        background-color: var(--main-bg-color);
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
+        gap: 0.5rem;
+        margin-top: 2rem;
+        min-height: 13rem;
+        align-items: center;
 
-}
-.sign .heading span{
-    color: var(--green-color);
-}
-.sign{
-    background-color: var(--main-bg-color);
-    
-}
-.sign .container{
-    max-width: 50rem;
-    margin:  3rem auto;
-    background-color: var(--main-bg-color);
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
-    gap: 0.5rem;
-    margin-top: 2rem;
-    min-height: 13rem;
-    align-items: center;
+    }
+    .sign input{
+        border-radius: 1rem;
+        padding: 0.2rem 0.8rem;
+        max-width: 15rem;
+        height: 2rem;
+        border: none;
+        filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+    }
 
-}
-.sign input{
-    border-radius: 1rem;
-    padding: 0.2rem 0.8rem;
-    max-width: 15rem;
-    height: 2rem;
-    border: none;
-    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
-}
+    .product{
+        max-width: 50rem; 
+        margin:  3rem auto;
+        
+    }
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
+        gap: 0.5rem;
+        
+        
+    }
+    .product-container .box{
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-container .box img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 1.25rem;
+        height: 80%;
 
-.product{
-    max-width: 50rem; 
-    margin:  3rem auto;
-    
-}
-.product-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
-    gap: 0.5rem;
-    
-    
-}
-.product-container .box{
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.product-container .box img{
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 1.25rem;
-    height: 80%;
+    }
+    .product .heading{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .product .heading h1{
+        padding: 1.0rem 0;
+        font-size: 1.5rem;
+    }
+    .productInfo{
+        display: none;
+        margin-left: 5rem;
+        padding: 0.5rem 0 0 0;
+    }
 
-}
-.product .heading{
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.product .heading h1{
-    padding: 1.0rem 0;
-    font-size: 1.5rem;
-}
-.productInfo{
-    display: none;
-    margin-left: 5rem;
-    padding: 0.5rem 0 0 0;
-}
+    .box:hover .productInfo{
+        display: inline;
+    }
+    .box:hover  {
+        /* background: var(--sub-brown); */
+        background-color: #f1e2d7;
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow:20px 20px 50px  #f1e2d7 ; 
+    }
+    .title{
+        margin-left: -6rem;
+    }
 
-.box:hover .productInfo{
-    display: inline;
-  }
-  .box:hover  {
-    /* background: var(--sub-brown); */
-    background-color: #f1e2d7;
-    padding: 1rem;
-    border-radius: 2rem;
-    box-shadow:20px 20px 50px  #f1e2d7 ; 
-  }
-  .title{
-    margin-left: -6rem;
-  }
-  
 </style>
 <html lang = 'en'>
     <head>
@@ -174,8 +172,9 @@
         <!--Icons-->
         <link rel="stylesheet" href="./style/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
- 
+
     </head>
+
         <body>
             <!--Header-->
             <header>
