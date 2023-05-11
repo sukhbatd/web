@@ -1,175 +1,339 @@
 <!DOCTYPE html>
+<style>
+    .swiper-wrapper .container{
+    position: relative;
+    width: 100%;
+    min-height: 30rem;
+    max-height: 35rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-text{
+    position: absolute;
+    padding: 20%;
+    color: white;
+
+}
+.home-text span{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.home-text h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+
+.about{
+    min-width: 30rem;
+    max-width: 50rem;
+    margin:  3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+    align-items: center;
+    gap: 1rem;
+
+}
+.about-text h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.about-text {
+    margin: 0.5rem 0 1rem;
+    max-width: 35rem;
+}
+.about p{
+    padding: 2rem 0;
+}
+.about img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.btn{
+    padding: 0.8rem 1rem;
+    background: var(--main-bg-color);
+    color: white;
+    font-weight: 400;
+    border-radius: 5rem;
+    max-width: 10rem;
+}
+.btn:hover{
+    background: var(--sub-brown);
+    transition: 0.2s ease;
+
+}
+.sign .heading h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.8rem 0;
+
+}
+.sign .heading span{
+    color: var(--green-color);
+}
+.sign{
+    background-color: var(--main-bg-color);
+    
+}
+.sign .container{
+    max-width: 50rem;
+    margin:  3rem auto;
+    background-color: var(--main-bg-color);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
+    gap: 0.5rem;
+    margin-top: 2rem;
+    min-height: 13rem;
+    align-items: center;
+
+}
+.sign input{
+    border-radius: 1rem;
+    padding: 0.2rem 0.8rem;
+    max-width: 15rem;
+    height: 2rem;
+    border: none;
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+}
+
+.product{
+    max-width: 50rem; 
+    margin:  3rem auto;
+    
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, auto));
+    gap: 0.5rem;
+    
+    
+}
+.product-container .box{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-container .box img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.25rem;
+    height: 80%;
+
+}
+.product .heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.product .heading h1{
+    padding: 1.0rem 0;
+    font-size: 1.5rem;
+}
+.productInfo{
+    display: none;
+    margin-left: 5rem;
+    padding: 0.5rem 0 0 0;
+}
+
+.box:hover .productInfo{
+    display: inline;
+  }
+  .box:hover  {
+    /* background: var(--sub-brown); */
+    background-color: #f1e2d7;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow:20px 20px 50px  #f1e2d7 ; 
+  }
+  .title{
+    margin-left: -6rem;
+  }
+  
+</style>
 <html lang = 'en'>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#F"/>
+        <meta name="theme-color" content="#fffff"/>
         <meta name="title" content="Жүр үр">
         <meta name=" keywords" content = "Жүр үр, Аз жаргалаа түгээе, Аз жаргалаа хуваалцъя, аз жаргал, жүр, үр, жүр үр, Jur ur, jur ur, share happiness, jur ur cake, bread">
         <meta name="description" content="Жүр үртэй хамт аз жаргалыг хуваалцъя">
-        <title>Жүр үр</title>
+        <title>The Cake House</title>
        <!--style css-->
-        <link rel="stylesheet" href="../style/style1.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <script  src="../javascript/product.json" ></script>
+        <link rel="stylesheet" href="./style/style1.css">
+        <script  src="./javascript/product.json" ></script>
         <!--Icons-->
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <link rel="stylesheet" href="./style/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+ 
     </head>
         <body>
             <!--Header-->
-             <header>
-                <div class="container">
-                    <div class="logos">
-                        <img class="logo" src="../image/logo.svg" alt="Жүр үр лого">
-                        <img class="sub_logo" src="../image/share-happiness.svg" alt="Аз жаргалаа хуваалцъя" >
-                    </div>
-                    
-                        <nav >
-                            <ul class="main_menu">
-                                <li><a href="index.html" class="active">Нүүр</a></li>
-                                <li><a href="products.html">Бүтээгдэхүүн</a></li>
-                                <li><a href="about.html">Бидний тухай</a></li>
-                            </ul>
-                        </nav>
-            
-                    <div class="right_menu">
-                        <a href="#" class="basket"><i class='bx bx-cart'></i><span class="counter">1</span></a>
-                        <a class="login" href="login.html">
-                            <button type="button" class="login_button">
-                                <span>Нэвтрэх</span>
-                            </button>
-                        </a> 
-                    </div>
-                </div>    
+            <header>
+                <article class="menu-icon" id="menu-icon"><i class="fa-solid fa-bars"></i></article>
+                <a href="#home"><img src="./image/logo.svg" alt="The cake house logo" > </a>
+                
+                <ul class="navbar">
+                    <li><a href="#home" class="home-active">Нүүр хуудас</a></li>
+                    <li><a href="about.html">Бидний тухай</a></li>
+                    <li><a href="#products">Бүтээгдэхүүн</a></li>
+                    <li><a href="#contact">Холбоо барих</a></li>
+                    <li><a href="#customers">Түгээмэл асуултууд</a></li>
+                </ul>
+                <article class="profile">
+                    <a href="#"><i class="fa-solid fa-basket-shopping fa-xl"></i><span>1</span></a>
+                    <a href="#sign"><i class="fa-solid fa-user" style="color: #fff; "></i></a>
+                </article>
             </header>
-            <div >
-                <ul id="productList"></ul>
-
-            </div>
-            <!-- <img src="" id="image" alt=""> -->
-        <!-- <script>
-            let text =  '{ "employees" : [' +
-                        '{ "firstName":"../image/gplay.svg" , "lastName":"Doe" },' +
-                        '{ "firstName":"Anna" , "lastName":"Smith" },' +
-                        '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
-            const obj = JSON.parse(text);
-            var img = document.createElement('img');  
-            var txt = obj.employees[0].firstName ;
-            img.src = txt;
-            document.getElementById("image").appendChild(img) ;
-            var ttt = document.getElementById("image");
-            ttt.style = "width: 100px";
-            // document.getElementById("image").src = txt;
-        </script> -->
-            <!--
-            Main section  
-            <main class="home">
-               Soligdoh zurag
-              <div class="slide_image">
-                    <div class="first">
-                        <a href="#" aria-label="Read more about Seminole's new baby mayor">
-                            <div class= image1>
-                                <img src="logo.jpg" alt="Jur ur" width="30" height="30">
-                            </div>
-                        </a>
+            <main>
+                <section class="home swiper" id="home">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide container">
+                            <aricle  class="home-text">
+                                <h1>Hero title example</h1>
+                                <span>Sub hero title example</span>
+                            </aricle >
+                            <img src="./image/background images/IMG_5730.JPG" alt="cake1">
+                        </article>
+                        <!--Slide 2-->
+                        <article class="swiper-slide container">
+                            <aricle  class="home-text">
+                                <h1>Hero title example</h1>
+                                <span>Sub hero title example</span>
+                            </aricle >
+                            <img src="./image/background images/IMG_5725.JPG" alt="cake3">
+                        </article>
+                        <!--Slide 3-->
+                        <article class="swiper-slide container">
+                            <aricle  class="home-text">
+                                <h1>Hero title example</h1>
+                                <span>Sub hero title example</span>
+                            </aricle >
+                            <img src="./image/background images/IMG_5729.JPG" alt="cake3">
+                        </article>
                     </div>
-                    <div class="second">
-                        <a href="#" aria-label="Read more about Seminole's new baby mayor">
-                            <div class= image2>
-                                <img src="logo.jpg" alt="Jur ur" width="30" height="30">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="third">
-                        <a href="#" aria-label="Read more about Seminole's new baby mayor">
-                            <div class= image3>
-                                <img src="logo.jpg" alt="Jur ur" width="30" height="30">
-                            </div>
-                        </a>
-                    </div> 
-                    Zuun, baruun tallin tovch
-                    <div class="left_button">
-                        <button class="left" title="left"></button>
-                    </div>
-                    <div class="right_button">
-                        <button class="right" title="right"></button>
-                    </div>
-                </div>  
-            </main> -->
-            <script type="module" src="../javascript/script.js" >
-            
-            </script>
-            <!-- <script>
-                let pro = `
-[
-
-    {
-      "id":"1",
-      "name": "Бялуу",
-      "code": "VS5",
-      "img": "../image/logo.jpg",
-      "cost": "6.99",
-      "description": "jdhjs",
-      "porch":"hdjjfjhfgjsd"
-  },
-  {
-    "id":"2",
-    "name": "Бялуу",
-    "code": "VS5",
-    "img": "../image/logo.jpg",
-    "cost": "6.99",
-    "description": "jdhjs",
-    "porch":"hdjjfjhfgjsd"
-  },
-  {
-    "id":"3",
-    "name": "Бялуу",
-    "code": "VS5",
-    "img": "../image/logo.jpg",
-    "cost": "6.99",
-    "description": "jdhjs",
-    "porch":"hdjjfjhfgjsd"
-  },
-  {
-    "id":"4",
-    "name": "Бялуу",
-    "code": "VS5",
-    "img": "../image/logo.jpg",
-    "cost": "6.99",
-    "description": "jdhjs",
-    "porch":"hdjjfjhfgjsd"
-  }
-]`
-console.log(JSON.parse(pro));
-            </script> -->
-            <footer>
-                <div class="row">
-                    <div class="column">
-                        
-                       <i class='bx bxs-store'></i>
-                       <span class="serve">Үйлчилгээний нөхцөл</span>
-                        <p>Загвар болон өдөр өөрчлөх боломжгүй байгаа тул та сайн нягталж шалгаад захиалаарай. Бялуу болон тартны хүргэлтийн үйлчилгээг "Улаанбаатар такси" компани хариуцаж байгаа та хүргэлттэй холбоотой асуух лавлах зүйл холбоо барина уу.</p>
-                    </div>
-                    <div class="column">
-                        
-                        <h3>Холбоо барих</h3> 
-                        <i class='bx bxs-phone-call'></i><span class="call">976-9999-9999</span>
-                        <address>
-                            
-                            <a href=""> <i class='bx bxl-facebook-circle'></i></a>
-                            <a href=""><i class='bx bxl-gmail'></i></a>
-                            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                            <a href=""><i class='bx bxs-map'></i></a>
-                            
-                        </address> 
-                         <a href="mobile.html"><img src="../image/gplay.svg" alt="Google Play store link"></a>
-                         <a href=""><img src="../image/appstore.svg" alt=""></a>
-                    </div>
+                      <article class="swiper-button-next" style="color: white"></article>
+                      <article class="swiper-button-prev" style="color: white"></article>
                     
+            
+                </section> 
+                <!--About section-->
+                <section class="about" id="about">
+                    <img src="./image/background images/IMG_5719.JPG" alt="aboutcake1">
+                    <article class="about-text">
+                        <h1>Бидний тухай</h1>
+                        <span>Бидний амжилт</span>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        </p>
+                        <a href="about.html" class="btn">Илүү унших</a>
+                    </article>
+                </section>
+                <!--sign up section-->
+                <section class="sign" id="sign">
+                    <article class="container">
+                        <article class="heading">
+                            <h1>Бүртгүүлэх</h1>
+                            <span>И-мэйлээр илгээгдсэн линкээр орж бүртгэлээ </br> баталгаажуулна уу.</span>
+                        </article>
+                        <input type="email" placeholder="Enter your mail">
+                        <button class="btn1">Линк авах</button>
+                    </article>
+                    
+                </section>
+                <!--Product section-->
+                <section class="product" id="product">
+                    <article class="heading">
+                        <h1>Эрэлттэй бүтээгдэхүүнүүд</h1>
+                        <span>Тайлбар</span>
+                    </article>
+                    <!--Container content-->
+                    <article class="product-container">
+                        <!--Box1-->
+                        <article class="box">
+                            <img src="./image/background images/IMG_5728.JPG" alt="cake1"> 
+                            <span class="productInfo title">Cake1</span>
+                            <span class="productInfo">22$</span> 
+                        </article>
+                        <!--Box2-->
+                        <article class="box">
+                            <img src="./image/background images/IMG_5725.JPG" alt="cake1">
+                            <span class="productInfo title">Cake1</span>
+                            <span class="productInfo">22$</span> 
+                        </article>
+                        <!--Box3-->
+                        <article class="box">
+                            <img src="./image/background images/IMG_5724.JPG" alt="cake1">
+                            <span class="productInfo title">Cake1</span>
+                            <span class="productInfo">22$</span> 
+                        </article>
+                        <!--Box4-->
+                        <article class="box">
+                            <img src="./image/background images/IMG_5726.JPG" alt="cake1">  
+                            <span class="productInfo title">Cake1</span>
+                            <span class="productInfo">22$</span>   
+                        </article>
+                        <!--Box5-->
+                        <article class="box">
+                            <img src="./image/background images/IMG_5720.JPG" alt="cake1">   
+                            <span class="productInfo title">Cake1</span>
+                            <span class="productInfo">22$</span> 
+                        </article>
 
-                </div>
+                    </article>
+                </section>
+            </main>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script  src="./javascript/script.js" ></script>
+            
+            <footer>
+                <article class="container">
+                    <article  class="footer-box">
+
+                        <h2>Санал хүсэлт</h2>
+                        <span>Send ud message</span>
+            
+                        <input type="text" name="" placeholder="Нэр" >
+                        <input type="email" name="" placeholder="И-мэйл" >
+                        <input type="text" name="" placeholder="Сэтгэгдэл" style="padding-bottom: 5rem; max-width: 18rem;" >
+                        <button class="btn1">Илгээх</button>
+                    </article >
+                    <article class="footer-box">
+                        <h2>The Cake House</h2>
+                        <span>All our pages</span>
+                        <ul class="navbar1">
+                            <li><a href="#home" >Нүүр хуудас</a></li>
+                            <li><a href="#categories">Бидний тухай</a></li>
+                            <li><a href="#products">Бүтээгдэхүүн</a></li>
+                            <li><a href="#about">Үйлчилгээний нөхцөл</a></li>
+                            <li><a href="#customers">Түгээмэл асуултууд</a></li>
+                            <li><a href="">Холбоо барих</a></li>
+                        </ul>
+                    </article >
+                    <article class="footer-box">
+                        <h2>Холбоо барих</h2>
+                        <span>Contacts</span>
+                        <img src="./image/footer-logo.svg" alt="The cake house footer">
+                        <article class="contact">
+                            <i class="fa-solid fa-phone"></i><span >+976 8810-0239</span>
+                        </article>
+                        <article class="contact">
+                            <i class="fa-solid fa-envelope"></i><span >thecakehouse@gmail.com</span>
+                        </article>
+                    </article >
+                </article>
+                <p class="copyright">Copyright 2023. All Rights Reserved  </p>
             </footer>
+            
       
     </body>
 </html>

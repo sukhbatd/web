@@ -1,41 +1,40 @@
 
 [
-
-    {
+  {
       "id":"1",
-      "name": "Бялуу",
-      "code": "VS5",
-      "img": "../image/logo.jpg",
+      "name": "Cinnamon Bun",
+      "img": "https://www.cobsbread.com/us/wp-content//uploads/2018/03/Cinnamon-Buns-700x485.jpg",
       "cost": "6.99",
-      "description": "jdhjs",
-      "porch":"hdjjfjhfgjsd"
+      "description": "Get your fingers sticky as you unwind the spirals of buttery dough, to find a center coated in a gooey cinnamon sugar glaze. Topped with a rich cream cheese icing, these buns are so delicious you won’t be able to resist picking up one – or two.",
+      "nutrition":"",
+      "ingre":" Wheat Flour, Water, Cream Cheese Icing [Sugar, Cream Cheese (Pasteurized Milk and Cream, Salt, Carob Bean Gum, Cheese Culture), Margarine (Soybean Oil, Palm Oil, Water, Salt, Mono and Digycerides, Nonfat Dry Milk, Soy Lecithin, Sodium Benzoate, Artificial Flavor, Vitamin A Palmitate, Beta Carotene, Maltodextrin, Water, Vegetable Shortening (Cottonseed Oil), Mono and Diglycerides, Natural And Artificial Flavors (Milk, Soy), Corn Starch, Modified Food Starch (Corn), Salt, Glucono-Delta-Lactone, Dextrose, Benzoic Acid], Sugar, Butter [Cream, Natural Colors], White Sugar, Yeast, Sunflower Oil, Apricot Glaze [Water, Sugar, Corn Syrup, Pectin, Citric Acid, Carrageenan, Xanthan Gum, Artificial Flavor, Potassium Sorbate, Sodium Citrate, Sodium Metabisulfite, Sodium Phosphate, Paprika], Cinnamon [Cinnamon, Sunflower Oil], Salt, Improver [Dextrose, Wheat Flour, Sodium Stearoyl Lactylate, Mono and Diglycerides, Amylase, Soya Oil, Ascorbic Acid]."
   },
   {
     "id":"2",
-    "name": "Бялуу",
-    "code": "VS5",
-    "img": "../image/logo.jpg",
+    "name": "Gingerbread Scone",
+    "img": "https://www.cobsbread.com/us/wp-content//uploads/2021/02/cobs-product-scone-gingerbread-3-650x458.png",
     "cost": "6.99",
-    "description": "jdhjs",
-    "porch":"hdjjfjhfgjsd"
+    "description": "This Gingerbread Scone is loaded with everything your holiday sweet tooth could ask for. Finely chopped candied ginger, white chocolate chips, and gingerbread spices are blended into a fragrant scone that belongs at every Christmas dinner. With this much icing sugar and irresistible drizzle, your guests will be begging for your recipe. You can just give them our address.",
+    "nutrition": "",
+    "ingre": "Wheat Flour, Butter (Cream, Salt), Sugar, Buttermilk Powder, Baking Powder, Salt, Vegetable Oil, Sunflower Lecithin, Protease, Amylase, Water, White Choc Chips [Sugar, Cocoa Butter, Whole Milk Powder, Nonfat Dry Milk, Milk Fat, Soya Lecithin, Natural Vanilla Extract], Ginger [Ginger, Sugar], Spices, White Icing [Sugar, Water, Corn Syrup, Natural and Artificial Flavor, Agar, Mono and Diglycerides, Potassium Sorbate, Titanium Dioxide, Dextrose, Citric Acid, Locust Bean Gum], Icing Sugar [Sugar, Cornstarch]."
   },
   {
     "id":"3",
-    "name": "Бялуу",
-    "code": "VS5",
-    "img": "../image/logo.jpg",
+    "name": "Pumpkin Scone",
+    "img": "https://www.cobsbread.com/us/wp-content//uploads/2022/03/Scone-Pumpkin-HiRes-RGB-650x458.png",
     "cost": "6.99",
-    "description": "jdhjs",
-    "porch":"hdjjfjhfgjsd"
+    "description":"Fall is here! But more importantly Pumpkin Scones are here! Pumpkin purée and aromatic spices like cinnamon and nutmeg make this scone a fall favorite! We topped them with a decadent cream cheese glaze and drizzled with caramel. Drooling yet? Warm these up and fill your home with the scents of pumpkin spice and the changing seasons.",
+    "nutrition": "",
+    "ingre": "Wheat Flour, Butter (Cream, Salt), Sugar, Buttermilk Powder, Baking Powder, Salt, Vegetable Oil, Sunflower Lecithin, Protease, Amylase, Water, Pumpkin, Cream Cheese Icing [Sugar, Cream Cheese (Pasteurized Milk and Cream, Salt, Carob Bean Gum, Cheese Culture), Margarine (Soybean Oil, Palm Oil, Water, Salt, Mono and Digycerides, Nonfat Dry Milk, Soy Lecithin, Sodium Benzoate, Artificial Flavor, Vitamin A Palmitate, Beta Carotene, Maltodextrin, Water, Vegetable Shortening (Cottonseed Oil), Mono and Diglycerides, Natural And Artificial Flavors (Milk, Soy), Corn Starch, Modified Food Starch (Corn), Salt, Glucono-Delta-Lactone, Dextrose, Benzoic Acid], Caramel Icing [Sugar, Water, Corn Syrup, Cornstarch, Agar-Agar, Blue 1, Caramel Color, Dextrose, Food Starch-Modified, Invert Sugar, Mono and Diglycerides, Natural And Artificial Flavor, Preservatives (Potassium Sorbate, Sodium Propionate), Propylene Glycol, Red 40, Salt, Yellow 5], Pumpkin Spice."
   },
   {
     "id":"4",
-    "name": "Бялуу",
-    "code": "VS5",
-    "img": "../image/logo.jpg",
+    "name": "Double Chocolate Scone",
+    "img": "https://www.cobsbread.com/us/wp-content//uploads/2018/01/cobs-product-scone-double-chocolate-650x458.png",
     "cost": "6.99",
-    "description": "jdhjs",
-    "porch":"hdjjfjhfgjsd"
+    "description":"What’s better than single chocolate? DOUBLE chocolate! The Double Chocolate Scone couldn’t be more packed with cocoa and chocolate chips. Try it warm to melt the velvety chips and enjoy the tender pastry that melts in your mouth. Partner it with tea or coffee, or even with a scoop of icecream–we won’t tell.",
+    "nutrition": "",
+    "ingre": "Wheat Flour, Butter (Cream, Salt), Sugar, Buttermilk Powder, Baking Powder, Salt, Vegetable Oil, Sunflower Lecithin, Protease, Amylase, Water, Chocolate Chips [Sugar, Chocolate Liquor, Cocoa Butter, Dextrose, Soy Lecithin, Vanilla], Icing Sugar [Sugar, Cornstarch], Cocoa Powder, Vanilla Extract Water, Alcohol, Vanilla Extractives, Cane Sugar."
   }
 ]
   
