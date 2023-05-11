@@ -132,6 +132,7 @@ header a img{
 
 footer{
     background-color: var(--main-bg-color);
+    
 }
 footer .container{
     max-width: 50rem;
@@ -211,6 +212,9 @@ footer .container{
 
 /*Responsive*/
 @media(max-width:1200px){
+    main{
+        display: contents;
+    }
     #menu-icon{
         display: initial;
     }
@@ -248,6 +252,7 @@ footer .container{
     }
     
 }
+
 @media(max-width: 900px){
   
     header{
@@ -343,10 +348,6 @@ footer .container{
     header img{
         margin-right: 5rem;
     }
-    #home img{
-        max-width: 480px;
-        max-height: 480px;
-    }
     .product-container .box{
         max-width: 15rem;
         
@@ -361,9 +362,6 @@ footer .container{
     .box .title{
         margin-left: -9rem;
     }
-    .product-container{
-        margin-left: 100px;
-    }
     .footer-box img{
         width: 6rem;
         height: 6rem;
@@ -374,11 +372,23 @@ footer .container{
         justify-content: center;
         align-items: center;
     }
+    .about p{
+        padding: 2rem 3rem;
+    }
+    .about{
+        margin-top: 0;
+    }
 
 }
 
 @media(max-width: 360px){
-    header img
+    .navbar{
+        width: 70%;
+    }
+    #menu-icon .fa-bars{
+        padding-left: 1rem;
+    }
+    header a img
     {
         width: 10rem;
     }
@@ -386,7 +396,7 @@ footer .container{
         width: 15rem ;
         height: 15rem;
     }
-    .about-text p{
+    .about p{
         padding: 2rem 5rem;
     }
     .home-text h1 {
@@ -395,16 +405,13 @@ footer .container{
     .home-text span{
         font-size:1.2rem
     }
-    .product-container{
-        margin-left: 135px;
-    }
     .product-container .box{
         max-width: 12rem;
         
         
     }
     .product-container .box img{
-        max-height: 11rem;
+        max-height: 10rem;
     }
     .box .productInfo{
         margin-left: 6rem ;
@@ -417,6 +424,7 @@ footer .container{
         width: 6rem;
         height: 6rem;
     }
+ 
     
     
 }
